@@ -1,0 +1,64 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/postgres": "^1",
+    "@sap/audit-logging": "^6.1.0",
+    "@sap/cds": "^7",
+    "@sap/xsenv": "^5.1.0",
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "passport": "^0.7.0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "7.8.2",
+    "@sap/ux-specification": "1.120.9"
+  },
+  "scripts": {
+    "start": "cds run"
+  },
+  "cds": {
+    "requires": {
+      "[development]": {
+        "auth": {
+          "kind": "mocked",
+          "users": {
+            "UserViewer": {
+              "password": "initial",
+              "id": "UserViewer",
+              "roles": [
+                "UserViewer"
+              ]
+            },
+            "UserAdmin": {
+              "password": "initial",
+              "id": "UserAdmin",
+              "roles": [
+                "UserAdmin"
+              ]
+            }
+          }
+        }
+      },
+      "[postgres]": {
+        "db": {
+          "kind": "postgres",
+          "impl": "@cap-js/postgres",
+          "credentials": {
+            "host": "localhost",
+            "port": "5432",
+            "user": "postgres",
+            "password": "password",
+            "database": "contracts"
+          }
+        }
+      },
+      "auth": "xsuaa"
+    }
+  }
+}
