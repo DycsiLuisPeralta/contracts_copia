@@ -57,8 +57,7 @@
             "database": "contracts"
           }
         }
-      },
-      "auth": "xsuaa"
+      }
     }
   }
 }

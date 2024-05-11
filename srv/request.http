@@ -1,0 +1,5 @@
+### Get Contracts
+GET http://localhost:4004/odata/v4/manage-contracts/GetContracts
+
+### Create Contract
+Post http://localhost:4004/odata/v4/manage-contract/CreateContract
