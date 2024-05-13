@@ -1,5 +1,5 @@
 {
-  "name": "contracts",
+  "name": "contracts_copia",
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "repository": "<Add your repository here>",
@@ -57,7 +57,8 @@
             "database": "contracts"
           }
         }
-      }
+      },
+      "auth": "xsuaa"
     }
   }
 }

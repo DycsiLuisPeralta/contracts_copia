@@ -22,7 +22,7 @@ module.exports = (srv) => {
           Bukrs: req.data.Bukrs,
           Rbear: req.data.Rbear,
           Gsart: req.data.Gsart,
-          Dblfz: req.data.Bblfz,
+          Dblfz: req.data.Dblfz,
           Delfz: req.data.Delfz,
         })
       )
@@ -72,7 +72,7 @@ module.exports = (srv) => {
     console.log("Before end", returnData);
     return returnData;
   });
-  
+
   //***************DELETE***************//
   srv.on("DELETE", "DeleteContract", async (req) => {
     let returnData = await cds
