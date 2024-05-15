@@ -1,11 +1,11 @@
 ### Get Contracts
-GET http://localhost:4004/odata/v4/manage-contracts/GetContracts
+GET http://localhost:4004/odata/v4/user/GetContracts
 
 ### Create Contract
-POST http://localhost:4004/odata/v4/manage-contracts/CreateContract
+POST http://localhost:4004/odata/v4/user/CreateContract
 
 ### Update Contract
-PUT http://localhost:4004/odata/v4/manage-contracts/UpdateContract
+PUT http://localhost:4004/odata/v4/user/UpdateContract
 
 ### Delete Contract
-DELETE http://localhost:4004/odata/v4/manage-contracts/DeleteContract
+DELETE http://localhost:4004/odata/v4/user/DeleteContract
