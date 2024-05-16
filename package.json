@@ -45,7 +45,7 @@
           }
         }
       },
-      "[postgres]": {
+      "[pg]": {
         "db": {
           "kind": "postgres",
           "impl": "@cap-js/postgres",
