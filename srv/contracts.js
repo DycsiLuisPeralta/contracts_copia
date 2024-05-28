@@ -44,7 +44,7 @@ module.exports = (srv) => {
     return returnData;
   });
 
-  //***************UPDATE***************//
+  //***************UPDATE***************///
   srv.on("UPDATE", "UpdateContract", async (req) => {
     let returnData = await cds
       .transaction(req)
